@@ -187,6 +187,7 @@ img {
 .rating-component {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   width: 100%;
   max-width: 412px;
   min-height: 416px;
