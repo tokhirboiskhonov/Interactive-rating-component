@@ -109,9 +109,6 @@ img {
   justify-content: space-between;
 }
 
-.star-rating__radio {
-}
-
 .star-rating__control {
   display: flex;
   justify-content: center;
@@ -175,6 +172,7 @@ img {
   background-color: #fff;
   color: var(--orange);
 }
+
 .button--block {
   display: block;
   width: 100%;
@@ -197,15 +195,18 @@ img {
   background-color: #232a34;
   background-image: var(--black-gradient);
 }
+
 .rating-component__step {
   display: none;
 }
+
 .rating-component__step--active {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
 }
+
 .rating-component__inner {
   display: flex;
   flex-direction: column;
@@ -228,11 +229,13 @@ img {
   background-color: var(--dark-blue);
   margin-bottom: 30px;
 }
+
 .rating-component__star-icon {
   display: block;
   width: 17px;
   height: 16px;
 }
+
 .rating-component__heading {
   margin-top: 0;
   margin-bottom: 7px;
@@ -241,10 +244,12 @@ img {
   font-weight: 700;
   color: #fff;
 }
+
 .rating-component__text {
   margin: 0;
   color: var(--light-grey);
 }
+
 .rating-component__form {
   margin-top: 24px;
 }
@@ -258,6 +263,7 @@ img {
   height: 108px;
   margin-bottom: 32px;
 }
+
 .rating-component__result-msg {
   margin-bottom: 32px;
   padding: 4px 20px;
@@ -278,4 +284,64 @@ img {
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .star-rating__control {
+    width: 42px;
+    height: 42px;
+    font-size: 14px;
+    letter-spacing: 0.17px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+  .rating-component {
+    min-height: 360px;
+    padding: 24px;
+  }
+
+  .rating-component__star-box {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+  }
+
+  .rating-component__star-icon {
+    width: 13px;
+    height: 13px;
+  }
+
+  .rating-component__heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .rating-component__form-submit {
+    margin-top: 24px;
+  }
+
+  .rating-component__thank-you-img {
+    width: 144px;
+    height: 96px;
+    margin-bottom: 24px;
+  }
+
+  .rating-component__result-msg {
+    margin-bottom: 24px;
+    padding: 5px 12px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body {
+    padding: 12px;
+  }
 }
