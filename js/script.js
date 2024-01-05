@@ -16,9 +16,15 @@ if (elRatingComponentForm) {
     elRatingComponentResultValue.textContent = ratingValue;
 
     let currentStep = elRatingComponentForm.closest(".rating-component__step");
-    currentStep.classList.remove("rating-component__step--active");
-    currentStep.nextElementSibling.classList.add(
-      "rating-component__step--active"
-    );
+
+    currentStep.addEventListener("animationend", (evt) => {
+      currentStep.classList.remove("rating-component__step--active");
+
+      currentStep.nextElementSibling.classList.add(
+        "rating-component__step--active",
+        "rating-component__step--in"
+      );
+    });
+    currentStep.classList.add("rating-component__step--out");
   });
 }
