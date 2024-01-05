@@ -35,14 +35,14 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-	padding: 0;
+  padding: 24px;
 	margin: 0;
-	font-family: "Hanken Grotesk", "Arial", sans-serif;
-	font-size: 18px;
-	font-weight: 500;
-	line-height: normal;
-	background-color: #ecf2ff;
-	color: #303b59;
+  font-family: "Overpass", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: var(--very-dark-blue);
+  color: var(--light-grey);
 }
 
 img {
