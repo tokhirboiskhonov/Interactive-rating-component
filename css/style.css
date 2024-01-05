@@ -74,6 +74,10 @@ img {
 	opacity: 1;
  }*/
 
+*:focus {
+  outline: 2px dashed var(--orange);
+  outline-offset: 3px;
+}
 /* VISUALLY-HIDDEN */
 .visually-hidden {
 	position: absolute;
