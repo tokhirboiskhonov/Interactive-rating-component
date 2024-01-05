@@ -1,32 +1,19 @@
-/* FONT-FACE */
-@font-face {
-	font-family: "Hanken Grotesk";
-	src:
-		url("../fonts/HankenGrotesk-ExtraBold.woff2") format("woff2"),
-		url("../fonts/HankenGrotesk-ExtraBold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
+/* CUSTOM PROPS */
 
-@font-face {
-	font-family: "Hanken Grotesk";
-	src:
-		url("../fonts/HankenGrotesk-Medium.woff2") format("woff2"),
-		url("../fonts/HankenGrotesk-Medium.woff") format("woff");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
+:root {
+  /* Colors */
+  --orange: #fc7614;
+  --dark-blue: #262e38;
+  --very-dark-blue: #131518;
+  --light-grey: #969fad;
+  --medium-gray: #7c8798;
 
-@font-face {
-	font-family: "Hanken Grotesk";
-	src:
-		url("../fonts/HankenGrotesk-Bold.woff2") format("woff2"),
-		url("../fonts/HankenGrotesk-Bold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
+  /* Gradients */
+  --black-gradient: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
 }
 
 /* GLOBAL */
